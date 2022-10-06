@@ -1,0 +1,346 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: content-box;
+    font-family: 'Staatliches', cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(40deg, #7FDBFF, #001f3f);
+}
+.container.active{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ksztalt{
+    height: 35rem;
+    width: 25rem;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #36f7e7;
+    box-shadow: 0 0 1em black;
+}
+.ksztalt.active{
+    background: #f0f0f0;
+    box-shadow: 0 0 2px black;
+}
+
+.liczydlo{
+    position: relative;
+    height: 22%;
+    width: 100%;
+    display: flex;
+    pointer-events: none;
+    background: rgb(30, 58, 82);
+}
+.liczydlo.active{
+    background: rgb(230, 224, 224);
+}
+.liczydelko{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 4rem;
+    text-align: left;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-left: 1rem;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+.liczydelko.active{
+    color: black;
+}
+.resBac{
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    justify-content: space-between;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: rgb(1, 24, 43);
+}
+.resBac.active{
+    background: grey;
+}
+.reset{
+    height: 100%;
+    width: 50%;
+}
+.resBtn{
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    background: rgb(205, 255, 140);
+    color: rgb(30, 58, 82);
+    border: none;
+    cursor: pointer;
+}
+.resBtn.active{
+    background: #f0f0f0;
+    color: black;
+}
+.resBtn:hover{
+    background: rgb(240, 9, 9);
+    color: white;
+}
+.back{
+    height: 100%;
+    width: 50%;
+}
+.bacBtn{
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    background: red;
+    color: white;
+    background: rgb(39, 37, 37);
+    border: none;
+    cursor: pointer;
+}
+.bacBtn.active{
+    color: black;
+    background: #f0f0f0;
+}
+.bacBtn:hover{
+    background: grey;
+}
+
+.others{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+}
+.guzik123{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+}
+.guzik456{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+}
+.guzik789{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+}
+.guzik{
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(30, 58, 82);
+    padding: 0;
+    border: 1px rgb(30, 58, 82) solid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+}
+.guzik.active{
+    color: black;
+    border: 1px rgb(230, 224, 224) solid;
+}
+.guzik:hover{
+    opacity: 0.6;
+}
+.equal{
+    background: rgb(39, 37, 37);
+}
+.equal.active{
+    background: rgb(229, 153, 153);
+}
+.equal:hover {
+    background: grey;
+    opacity: 1;
+    border: 1px solid grey;
+}
+.fa-equals{
+    text-align: center;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+.guzik.pow{
+    text-indent: -9000px;
+    text-transform: capitalize;
+}
+.fa-superscript{
+    text-indent: 0;
+    text-transform: capitalize;
+    pointer-events: none;
+}
+.podpis{
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 70%;
+    font-size: 3rem;
+    font-family: 'Teko', sans-serif;
+    pointer-events: none;
+}
+.podpis span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+.motyw{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    height: 8rem;
+    width: 10rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rangeInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 60%;
+    -webkit-appearance: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(34, 33, 33);
+}
+.ms{
+    display: flex;
+    height: 70%;
+    width: 100%;
+}
+.sun{
+    height: 60%;
+    width: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-sun{
+    height: 80%;
+    width: 80%;
+    font-size: 4rem;
+    color:rgb(177, 177, 69);
+}
+.fa-sun.active{
+    color:rgb(255, 255, 64);
+}
+.moon{
+    height: 60%;
+    width: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-moon{
+    height: 80%;
+    width: 80%;
+    font-size: 4rem;
+    color:rgb(41, 66, 88);
+}
+.fa-moon.active{
+    color:rgb(130, 209, 255);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+    text-align: center;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    background: rgb(255, 243, 243);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input[type=range]::-ms-thumb{
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    background: rgb(255, 243, 243);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*Mozilla*/
+}
+
+input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    background: rgb(255, 243, 243);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*IE*/
+}

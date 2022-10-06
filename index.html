@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple calculator</title>
+</head>
+<body>
+<div class="container">
+    <div class="ksztalt">
+        <div class="liczydlo">
+            <input type="text" class="liczydelko" placeholder="0" name='liczydelko'>
+        </div>
+    <div class="resBac">
+        <div class="reset">
+            <button id="reset" class="resBtn" value="reset">C</button>
+        </div>
+        <div class="back">
+            <button id="back" class="bacBtn" value="back">DEL</button>
+        </div>
+    </div>
+        <div class="others">
+            <p class="guzik">(</p>
+            <p class="guzik">)</p>
+            <p class="guzik">0</p>
+            <p class="guzik sqrt"><i class="fas fa-square-root-alt"></i></p>
+            <p class="guzik pow">**<i class="fas fa-superscript"></i></p>
+        </div>
+        <div class="guzik123">
+            <p class="guzik">1</p>
+            <p class="guzik">2</p>
+            <p class="guzik">3</p>
+            <p class="guzik">+</p>
+            <p class="guzik">-</p>
+        </div>
+        <div class="guzik456">
+            <p class="guzik">4</p>
+            <p class="guzik">5</p>
+            <p class="guzik">6</p>
+            <p class="guzik">*</p>
+            <p class="guzik">/</p>
+        </div>
+        <div class="guzik789">
+            <p class="guzik">7</p>
+            <p class="guzik">8</p>
+            <p class="guzik">9</p>
+            <p class="guzik">.</p>
+            <p class="guzik equal"><i class="fas fa-equals"></i></p>
+        </div>
+    </div>
+</div>
+    <div class="motyw">
+        <div class="ms">
+        <div class="sun"><i class="fas fa-sun"></i></div>
+        <div class="moon"><i class="fas fa-moon"></i></div>
+        </div>
+        <input class="rangeInput" type="range" min="0" max="1" value="1">
+    </div>
+    <div class='podpis'>Developed by <br><span>Adrian Brożek</span></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
